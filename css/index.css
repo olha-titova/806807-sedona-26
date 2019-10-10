@@ -1,10 +1,240 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
+body {
+  margin: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+  text-transform: uppercase;
+
+background-color: #fff;
+background-position: top center;
+background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+.nav-menu {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight:bold;
+  
+
+  background-color: #ffffff;
+}
+.list-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #ffffff;
+}
+.description {
+  text-align: center;
+  background-image: url("/img/intro.jpg");
+}
+
+.description h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+.description p {
+  font-size: 14px;
+  line-height: 26px;
+}
+.interested {
+  text-align: center;
+}
+.interested-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+.interested-title {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight:bold;
+}
+.nav-information {
+  font: inherit; 
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+}
+.nav-information:hover {
+  color: #81B3D2;
+}
+.nav-information:focus,
+.nav-information:active {
+  color: #000000;
+  opacity: 0.3;
+}
+.hotel-search {
+  font: inherit; 
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;
+  color: #ffffff;
+}
+.hotel-search:hover {
+  background-color:#604E43;
+  color:#ffffff; 
+}
+.hotel-search:focus,
+.hotel-search:active {
+  background-color:#503E33;
+  color:#ffffff;
+  
+}
+.calendar-search {
+  fill: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  opacity: 0.3;
+  background-color: #fff;
+
+}
+.calendar-search:hover {
+  fill: #000000;
+  opacity: 1;
+}
+.calendar-search:focus,
+.calendar-search:active {
+  background-color: #fff;
+  fill: #81B3D2;
+  outline: none;
+}
+
+.submit-button {
+  font-size: 21px;
+  line-height: 27px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight:bold;
+  color:#ffffff;
+  background-color: #81B3D2;
+  border: none;
+}
+.submit-button:hover {
+background-color: #669EC0;
+}
+.submit-button:focus,
+.submit-button:active {
+background-color: #5496BD;
+color: #ffffff;
+}
+.footer-links {
+  list-style: none;
+  width: 300px;
+}
+.links{
+  background-color: #81B3D2;
+}
+.links:hover {
+  background-color:#669EC0;
+}
+.links:focus,
+.links:active {
+  background-color:#5496BD;
+}
+.twitter-link {
+  fill: #000000;
+  background-color: #5496BD;
+ 
+
+}
+.fb-link {
+ fill: #000000;
+ background-color: #5496BD;
+}
+.youtube-link {
+  fill: #000000;
+  background-color: #5496BD;
+}
+
+
+
+.footer-copyright,
+.img-copyright { 
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  width: 115px;
+  height: 41px;
+  fill: #000000;
+  background-color: #fff;
+}
+.img-copyright:hover path{
+  fill: #81B3D2;
+}
+.img-copyright:focus path,
+.img-copyright:active path {
+  fill: #BDBBBC;
+}
+.hotels-title {
+  font-size: 21px;
+  line-height: 26px;
+  color:#000000;
+  font-weight:bold;
+}
+.hotels-title:hover {
+  color: #81B3D2;
+}
+.hotels-title:focus,
+.hotels-title:active {
+  color: #000000;
+  opacity: 0.3;
+}
+.search-description p{
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.rank{
+  background-color: #F2F2F2;
+  color:#666666;
+}
+.details{
+  font-size: 14px;
+  line-height: 21px;
+  color:#fff;
+  font-weight:bold;
+  background-color: #81B3D2;
+}
+.details:hover{
+  background-color: #669EC0;
+}
+.details:focus,
+.details:active{
+  background-color: #5496BD;
+  color:rgba(255, 255, 255, 0.3);
+}
+.reservation{
+  font-size: 14px;
+  line-height: 21px;
+  color:#fff;
+  font-weight:bold;
+  background-color: #766357;
+}
+.reservation:hover{
+  background-color: #604E43;
+}
+.reservation:focus,
+.reservation:active {
+  background-color: #503E33;
+  color:rgba(255, 255, 255, 0.3);
 }
