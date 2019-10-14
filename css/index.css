@@ -2,16 +2,20 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-
-  background-color: #fff;
+  background-color: #f2f2f2;
   background-position: top center;
   background-repeat: no-repeat;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #ffffff;
 }
 .visually-hidden {
   position: absolute;
@@ -26,33 +30,47 @@ body {
 a {
   text-decoration: none;
 }
+.list-navigation,
 .nav-menu {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
   background-color: #ffffff;
 }
-.list-navigation {
+.list-navigation,
+.nav-menu {
   list-style: none;
 }
-.site-navigation a,
-.user-navigation a {
+.list-navigation a,
+.nav-menu a {
   color: #000000;
 }
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.nav-menu a:hover,
+.nav-menu a:focus,
+.nav-menu a:hover,
+.nave-menu a:focus {
   background-color: #ffffff;
 }
 .logo {
   width: 138px;
   height: 70px;
 }
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  background-color: #75a1c4;
+  background-image: url(../img/intro1.jpeg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top center;
+}
 .description {
   text-align: center;
-  background-image: url("/img/intro.jpg");
 }
 .description h2 {
   font-size: 21px;
@@ -72,14 +90,14 @@ a {
 .interested-title {
   font-size: 30px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .nav-information {
   font: inherit;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: #ffffff;
   border: none;
 }
 .nav-information:hover {
@@ -92,6 +110,9 @@ a {
 }
 .hotel-search {
   font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -101,38 +122,35 @@ a {
 }
 .hotel-search:hover {
   background-color: #604e43;
-  color: #ffffff;
 }
 .hotel-search:focus,
 .hotel-search:active {
   background-color: #503e33;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
 }
 .calendar-search {
-  fill: #000000;
+  fill: #cacaca;
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
-  opacity: 0.3;
   background-color: #fff;
+  outline: none;
 }
 .calendar-search:hover {
   fill: #000000;
-  opacity: 1;
 }
 .calendar-search:focus,
 .calendar-search:active {
-  background-color: #fff;
   fill: #81b3d2;
-  outline: none;
 }
 .submit-button {
+  font-family: inherit;
   font-size: 21px;
   line-height: 27px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
@@ -143,25 +161,25 @@ a {
 .submit-button:focus,
 .submit-button:active {
   background-color: #5496bd;
-  color: #ffffff;
-}
-.links {
-  list-style: none;
+  color: rgba(255, 255, 255, 0.3);
 }
 .footer-links {
+  list-style: none;
+}
+.footer-link {
   display: block;
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
 }
-.footer-links:hover {
+.footer-link:hover {
   background-color: #669ec0;
 }
-.footer-links:focus,
-.footer-links:active {
+.footer-link:focus,
+.footer-link:active {
   background-color: #5496bd;
 }
-.footer-links:active svg {
+.footer-link:active svg {
   opacity: 0.3;
 }
 .footer-copyright,
@@ -184,7 +202,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
 }
 .hotels-title:hover {
   color: #81b3d2;
@@ -206,8 +224,8 @@ a {
 .details {
   font-size: 14px;
   line-height: 21px;
-  color: #fff;
-  font-weight: bold;
+  color: #ffffff;
+  font-weight: 700;
   background-color: #81b3d2;
 }
 .details:hover {
@@ -221,8 +239,8 @@ a {
 .reservation {
   font-size: 14px;
   line-height: 21px;
-  color: #fff;
-  font-weight: bold;
+  color: #ffffff;
+  font-weight: 700;
   background-color: #766357;
 }
 .reservation:hover {
